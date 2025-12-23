@@ -1,0 +1,53 @@
+{
+  "name": "compiler-testgen",
+  "displayName": "Compiler Test Generator",
+  "description": "Generate Cypress and PyTest tests by selecting a source file",
+  "version": "1.0.0",
+  "publisher": "Tinkersmith",
+  "engines": {
+    "vscode": "^1.85.0"
+  },
+  "categories": [
+    "Testing"
+  ],
+  "activationEvents": [
+    "onCommand:testgen.generate"
+  ],
+  "main": "extension.js",
+  "contributes": {
+    "commands": [
+      {
+        "command": "testgen.generate",
+        "title": "Generate Tests for This File",
+        "category": "Testing"
+      }
+    ]
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/chris-tsq/compiler-testgen.git"
+  },
+  "bugs": {
+    "url": "https://github.com/chris-tsq/compiler-testgen/issues"
+  },
+  "homepage": "https://github.com/chris-tsq/compiler-testgen",
+  "scripts": {
+    "vscode:prepublish": "npx vsce package",
+    "test": "echo \"No tests configured yet\""
+  },
+  "devDependencies": {
+    "vsce": "^2.11.0"
+  },
+  "keywords": [
+    "testing",
+    "pytest",
+    "cypress",
+    "automation",
+    "test-generator"
+  ],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "vscode": "^1.1.37"
+  }
+}

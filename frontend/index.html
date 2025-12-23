@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login/Signup</title>
+  </head>
+  <body>
+    <div id="app" style="max-width: 400px; margin: 50px auto; padding: 20px">
+      <div
+        id="error-message"
+        style="
+          display: none;
+          padding: 10px;
+          margin-bottom: 20px;
+          border-radius: 4px;
+        "
+      ></div>
+
+      <div id="login-view">
+        <h2>Login</h2>
+        <div style="margin-bottom: 15px">
+          <label>Username:</label><br />
+          <input
+            type="text"
+            id="login-username"
+            style="width: 100%; padding: 8px; margin-top: 5px"
+          />
+        </div>
+        <div style="margin-bottom: 15px">
+          <label>Password:</label><br />
+          <input
+            type="password"
+            id="login-password"
+            style="width: 100%; padding: 8px; margin-top: 5px"
+          />
+        </div>
+        <button id="login-btn" style="padding: 10px 20px; cursor: pointer">
+          Login
+        </button>
+        <p style="margin-top: 20px">
+          Don't have an account?
+          <button id="show-signup" style="padding: 5px 10px; cursor: pointer">
+            Sign up here
+          </button>
+        </p>
+      </div>
+
+      <div id="signup-view" style="display: none">
+        <h2>Create Account</h2>
+        <div style="margin-bottom: 15px">
+          <label>Username:</label><br />
+          <input
+            type="text"
+            id="signup-username"
+            style="width: 100%; padding: 8px; margin-top: 5px"
+          />
+        </div>
+        <div style="margin-bottom: 15px">
+          <label>Email:</label><br />
+          <input
+            type="email"
+            id="signup-email"
+            style="width: 100%; padding: 8px; margin-top: 5px"
+          />
+        </div>
+        <div style="margin-bottom: 15px">
+          <label>Password:</label><br />
+          <input
+            type="password"
+            id="signup-password"
+            style="width: 100%; padding: 8px; margin-top: 5px"
+          />
+        </div>
+        <button id="signup-btn" style="padding: 10px 20px; cursor: pointer">
+          Sign Up
+        </button>
+        <p style="margin-top: 20px">
+          Already have an account?
+          <button id="show-login" style="padding: 5px 10px; cursor: pointer">
+            Login here
+          </button>
+        </p>
+      </div>
+
+      <div id="dashboard-view" style="display: none">
+        <h2>Welcome, <span id="username"></span>!</h2>
+        <p>You are successfully logged in.</p>
+        <button id="logout-btn" style="padding: 10px 20px; cursor: pointer">
+          Logout
+        </button>
+      </div>
+    </div>
+
+    <script src="app.js"></script>
+  </body>
+</html>
